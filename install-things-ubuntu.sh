@@ -2,7 +2,7 @@
 
 PROMPT1="Do you want to install no machine? Y/n?"
 PROMPT1NO="Nomachine Not installed"
-PROMPT2= "Do you want to install GDM gnome? Y/n"
+PROMPT2="Do you want to install GDM gnome? Y/n"
 PROMPT2NO="GDM Not installed"
 
 echo "running apt update and upgrade"
