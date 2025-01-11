@@ -70,7 +70,9 @@ newgrp docker
 docker volume create portainer_data
 docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:2.21.5
 
-echo "portainer is now running on the local computer at prt 9443 on https"
+
+ip=$(hostname -I | awk '{print $1}')
+echo "portainer is now running on the local computer at https://$ip:9443"
 
 
 
