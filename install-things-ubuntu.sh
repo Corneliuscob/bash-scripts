@@ -75,5 +75,6 @@ ip=$(hostname -I | awk '{print $1}')
 echo "portainer is now running on the local computer at https://$ip:9443"
 
 
-
+#install openssh
+sudo apt install openssh-server -y
 
