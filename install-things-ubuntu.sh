@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 PROMPT1="Do you want to install no machine? Y/n?"
 PROMPT1NO="Nomachine Not installed"
@@ -77,4 +77,7 @@ echo "portainer is now running on the local computer at https://$ip:9443"
 
 #install openssh
 sudo apt install openssh-server -y
+
+sudo usermod -aG docker $USER
+newgrp docker
 
