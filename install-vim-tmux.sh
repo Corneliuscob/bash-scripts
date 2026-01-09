@@ -12,7 +12,8 @@ mv tmux.conf .tmux.conf
 mv ./bash-scripts/.vimrc ./
 
 
-
+sudo apt-get install vim-gui-common
+sudo apt-get install vim-runtime
 
 
 
