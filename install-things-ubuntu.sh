@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 PROMPT1="Do you want to install no machine? Y/n?"
 PROMPT1NO="Nomachine Not installed"
@@ -64,7 +64,7 @@ sudo docker run hello-world
 sudo groupadd docker
 
 sudo usermod -aG docker $USER
-newgrp docker
+newgrp docker || true
 
 
 docker volume create portainer_data
@@ -77,4 +77,15 @@ echo "portainer is now running on the local computer at https://$ip:9443"
 
 #install openssh
 sudo apt install openssh-server -y
+sudo apt install git -y 
+
+cd 
+wget https://raw.githubusercontent.com/Corneliuscob/tmux-config/refs/heads/master/tmux/tmux.conf
+mkdir ~/.tmux
+cd .tmux
+wget https://github.com/Corneliuscob/tmux-config/blob/master/tmux/tmux.remote.conf
+cd 
+mv tmux.conf .tmux.conf
+
+
 
