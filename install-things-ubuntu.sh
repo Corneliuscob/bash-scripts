@@ -61,10 +61,15 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 
 sudo docker run hello-world
 
-sudo groupadd docker
+# sudo groupadd docker
 
+<<<<<<< HEAD
 sudo usermod -aG docker $USER
 newgrp docker || true
+=======
+# sudo usermod -aG docker $USER
+# newgrp docker
+>>>>>>> 33589e096cbf1fe9f5647c81056da64463edaea5
 
 
 docker volume create portainer_data
@@ -88,4 +93,7 @@ cd
 mv tmux.conf .tmux.conf
 
 
+
+sudo usermod -aG docker $USER
+newgrp docker
 
