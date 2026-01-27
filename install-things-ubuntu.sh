@@ -10,6 +10,7 @@ sudo apt update
 sleep 2 
 sudo apt upgrade -y 
 
+sudo apt install cifs-utils -y 
 
 confirmation_installation(){
     while true; do
