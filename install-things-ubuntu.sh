@@ -24,9 +24,9 @@ confirmation_installation(){
 
 if confirmation_installation "\{$PROMPT1}"  ; 
   then 
-    wget https://download.nomachine.com/download/8.14/Linux/nomachine_8.14.2_1_amd64.deb
-    sudo dpkg -i nomachine_8.14.2_1_amd64.deb
-    rm ./nomachine_8.14.2_1_amd64.deb
+    wget https://download.nomachine.com/download/8.14/Linux/nomachine_9.3.7_1_amd64.deb
+    sudo dpkg -i nomachine_9.3.7_1_amd64.deb
+    rm ./nomachine_9.3.7_1_amd64.deb
   else
     echo $PROMPT1NO
 fi
